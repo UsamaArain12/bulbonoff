@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On/off</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="./Off.jpg" alt="bulb" id="img"> 
+    <button id="btn" onclick="onBulb() ; offBulb()" type="button" >ON</button>
+<script>
+   function onBulb(btn) {
+            var image = document.getElementById('img');
+            if (image.src.match("Off.jpg")) {
+                image.src = "On.png" ;
+                document.getElementById("btn").innerText = "OFF"
+                
+            } else {
+                var image = document.getElementById('img');
+                if (image.src.match("On.png")) {
+                    image.src = "Off.jpg";
+                    document.getElementById("btn").innerText = "ON"
+                }
+            }}
+            const btn = document.getElementById('btn');
+
+</script>
+
+
+
+</body>
+</html>
